@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Header } from '@/components/header'
+import { Header } from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +11,7 @@ export default function About() {
             className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
         >
             <Header />
-            <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+            <div className="w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
                 <div className="flex flex-col items-center justify-between">
                     <h1 className="text-4xl font-bold text-center">
                         What is Food Vault?
