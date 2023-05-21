@@ -17,10 +17,15 @@ module.exports = {
           400: '#FFEE58',
           500: '#F51920FF',
         },
+        secondary: {
+          DEFAULT: '#F51920FF',
+          500: '#A3111599',
+        },
         neutral: {
           DEFAULT: '#424856FF',
           300: '#DEE1E6FF',
-          400: '#BDC1CAFF'
+          400: '#BDC1CAFF',
+          700: '#323743FF',
         }
       },
       zIndex: {
