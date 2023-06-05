@@ -11,7 +11,7 @@ export function Header() {
 
     return (
         <div>
-            <nav className="w-full bg-primary fixed top-0 left-0 right-0 z-10 rounded-sm">
+            <nav className="w-full bg-white fixed top-0 left-0 right-0 z-10 rounded-sm">
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -65,19 +65,14 @@ export function Header() {
                             }`}
                         >
                             <ul className='h-screen md:h-auto items-center justify-center mt-4 md:flex'>
-                                <li className={`pb-6 text-sm text-neutral py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:text-primary-500 md:hover:text-primary-500 md:hover:bg-transparent ${inter.className}`}>
+                                <li className={`pb-6 text-sm text-neutral py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:text-[#F51920FF] md:hover:text-[#F51920FF] md:hover:bg-transparent ${inter.className}`}>
                                     <Link href='/about' onClick={() => setNavBar(!navBar)}>
                                         What is Food Vault?
                                     </Link>
                                 </li>
-                                <li className={`pb-6 text-sm text-neutral py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:text-primary-500 md:hover:text-primary-500 md:hover:bg-transparent ${inter.className}`}>
+                                <li className={`pb-6 text-sm text-neutral py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:text-[#F51920FF] md:hover:text-[#F51920FF] md:hover:bg-transparent ${inter.className}`}>
                                     <Link href="/sign-up" onClick={() => setNavBar(!navBar)}>
-                                      Sign-Up
-                                    </Link>
-                                </li>
-                                <li className={`pb-6 text-sm text-neutral py-2 md:px-6 text-center border-b-2 md:border-b-0 hover:text-primary-500  md:hover:text-primary-500 md:hover:bg-transparent ${inter.className}`}>
-                                    <Link href="/faq" onClick={() => setNavBar(!navBar)}>
-                                      FAQ
+                                      Sign Up! 
                                     </Link>
                                 </li>
                             </ul>
