@@ -124,7 +124,7 @@ export default function Home() {
                   to reduce your inventory costs.
                 </p>
                 <br />
-                <Link href='/about' className='underline underline-offset-4 text-[17px] '>
+                <Link href='/about' className='underline underline-offset-4 text-[17px] text-[#D1090FFF]'>
                   Learn More
                 </Link>
               </div>
@@ -204,18 +204,18 @@ export default function Home() {
                   by Food Vault to streamline the process.
                 </p>
                 <br />
-                <Link href='/about' className='underline underline-offset-4 text-[17px] '>
+                <Link href='/about' className='underline underline-offset-4 text-[17px] text-[#D1090FFF]'>
                   Learn More
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className='mt-12 flex flex-row w-full justify-between items-center h-56'>
+        {/* <div className='mt-12 flex flex-row w-full justify-between items-center h-56'>
           <h1>
             Are you Scroll down lazy ass
           </h1>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </main>

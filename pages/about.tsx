@@ -2,20 +2,19 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { Header } from '@/components/Header'
 import Head from 'next/head'
+import { Footer } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function About() {
     // create a new about page with header component
     return (
-        <main
-            className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-        >
+        <main>
             <Head>
-              <title>Food Vault</title>
+              <title>Food Vault - About Us</title>
             </Head>
             <Header />
-            <div className="w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+            <div className="flex min-h-screen flex-col md:mt-20 mt-16">
                 <div className="flex flex-col items-center justify-between">
                     <h1 className="text-4xl font-bold text-center">
                         What is Food Vault?
@@ -53,6 +52,7 @@ export default function About() {
                     </p>
                 </div>
             </div>
+            <Footer />
         </main>
     )
 }
