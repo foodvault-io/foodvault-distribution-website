@@ -33,6 +33,7 @@ export function InformationCards() {
 
     if (isMobile) {
         return (
+            /* TODO: Create the Tab Component with the correct info for Mobile dev */
             <div className='flex flex-col mt-10 w-full justify-between items-center'>
                 <TabInfoCards />
             </div>
