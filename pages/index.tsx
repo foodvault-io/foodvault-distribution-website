@@ -2,9 +2,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Epilogue, Inter } from 'next/font/google'
 import { Header, Footer, InformationCards } from '@/components'
-import { Button, buttonVariants } from '@/components/ui/button'
 import Head from 'next/head'
-import Link from 'next/link'
 
 const epilogue = Epilogue({
   subsets: ['latin'],

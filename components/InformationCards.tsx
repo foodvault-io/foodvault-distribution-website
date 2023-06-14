@@ -6,6 +6,7 @@ import { Input } from "./ui/input";
 import { Inter, Epilogue } from 'next/font/google'
 import { useState, useRef, useEffect } from "react";
 import { TabInfoCards } from "./TabsInfoCards";
+import { Tabs } from "@radix-ui/react-tabs";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,8 +35,55 @@ export function InformationCards() {
     if (isMobile) {
         return (
             /* TODO: Create the Tab Component with the correct info for Mobile dev */
-            <div className='flex flex-col mt-10 w-full justify-between items-center'>
-                <TabInfoCards />
+            <div className='flex flex-col mt-10 w-full justify-between items-center h-[265px]'>
+              <div className='w-full flex justify-center items-center h-[50px]'>
+                <h1 className={`${epilogue.className} text-2xl sm:text-5xl leading-9 text-[#323743FF] font-bold`}>
+                  What Does Food Vault Do?
+                </h1>
+              </div>
+              <div className="grid grid-cols-2 gap-1 h-[210px] w-full pl-3 pr-3 items-center justify-center">
+                <TabInfoCards 
+                  color='gray' 
+                  title='Inventory Curation' 
+                  description='Utilize our easy forecasting tools to input your existing
+                  inventory order details and inventory needs alongside 
+                  current costs. Food Vault will use this information securely 
+                  to reduce your inventory costs.' 
+                  image='/home-page/security.svg'
+                  imageAlt="inventory-curation"
+                />
+                <TabInfoCards 
+                  color='red'
+                  title='Data Aggregation'
+                  description='Food Vault will then utilize the inventory data
+                  from other kitchens in your local area to formulate 
+                  an aggregated order that may be utilized in the 
+                  negotiation of a reduced cost inventory order for all kitchens.'
+                  image='/home-page/data-aggregation.svg'
+                  imageAlt="data-aggregation"
+                />
+                <TabInfoCards 
+                  color='green'
+                  title='Contract Option'
+                  description='Food Vault utilizes the aggregated inventory data 
+                  from all localized kitchens and requests bids from 
+                  both major and local suppliers to negotiate the best 
+                  rate available to all kitchens based on the aggregated 
+                  inventory data.'
+                  image='/home-page/contract-logo.svg'
+                  imageAlt="contract-option"
+                />
+                <TabInfoCards 
+                  color='orange'
+                  title='Direct Delivery'
+                  description='The selected distributor delivers the inventory on
+                  the agreed upon date at the negotiated price directly 
+                  to each kitchen. All payment flows are processed 
+                  by Food Vault to streamline the process.'
+                  image='/home-page/direct-delivery.svg'
+                  imageAlt="direct-delivery"
+                />
+              </div>
             </div>
         )
     } else {
