@@ -14,7 +14,7 @@ export function Footer() {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <footer className='bg-white m-4'>
+        <footer className='bg-[#FAFAFA] m-4'>
             <div className='w-full max-w-screen-xl mx-auto p-4 md:py-8'>
                 <div className='container px-6 py-8 mx-auto'>
                     <div className='flex justify-center items-center text-center'>

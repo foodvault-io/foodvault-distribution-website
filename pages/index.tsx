@@ -1,7 +1,16 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Epilogue, Inter } from 'next/font/google'
-import { Header, Footer, InformationCards } from '@/components'
+import { 
+  Header,
+  Footer, 
+  InformationCards, 
+  AboutUsSection,
+  BenefitsSection, 
+  BenefitsDistributorSection,
+  MissionStatement,
+  FAQ
+} from '@/components'
 import Head from 'next/head'
 
 const epilogue = Epilogue({
@@ -58,49 +67,33 @@ export default function Home() {
             </button>
           </div>
         </div> 
-        {/* <div className='flex flex-col md:flex-row justify-between w-full h-[400px]'>
-          <div className='basis-1/2 items-center justify-center'>
-              <text className={`m-0 text-[14px] leading-[22px] pb-4 ${inter.className}`}>
-                Food Distribution Re-Imagined 
-              </text>
-              <h1 className={`${epilogue.className} text-[52px] leading-10 text-neutral-700 font-bold`}>
-                About us
-              </h1>
-              <Image
-                alt="arc-1"
-                src="/home-page/arc-1.jpeg"
-                width={237}
-                height={24}
-                className='rounded-none'
-              />
-              <p className={`m-0 text-center text-sm ${inter.className} text-neutral-700 w-[480px] pt-3`}>
-              We are taking the wheel of distribution and 
-              <br/>
-              reinventing it for the modern world. Where 
-              <br/>
-              seamless ordering is prioritized, costs are
-              <br/>
-              minimized, and profits are maximized. And all you 
-              <br/>
-              have to do is share your order details.
-              </p>
-          </div>
-          <div className= 'basis-1/2 items-center justify-center'>
-            <div className='relative bottom-0 w-[360px] h-[375px] bg-green-200 rounded-t-full'>
-              <div className='absolute bottom-0 right-3'>
-                  <Image
-                    alt="jam-jar"
-                    src="/home-page/jar-of-jam-1.jpg"
-                    width={280}
-                    height={330}
-                    className=' rounded-[197px]'
-                  />
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* TODO: Include this text in the conditional InformationCard.tsx function */}
-        <InformationCards />
+
+        <div className='flex flex-col justify-between'>
+          <AboutUsSection />
+          {/* <div className='flex h-[30px]' /> */}
+          {/* TODO: Include this text in the conditional InformationCard.tsx function */}
+          <InformationCards />
+          <BenefitsSection 
+            benefits={
+              [
+                'Food Vault is a software platform that helps food businesses reduce costs by optimizing their supply chain.',
+                'We use data aggregation and forecasting to help you reduce your inventory costs.',            
+              ]
+            }
+          />
+          <BenefitsDistributorSection
+            title='For Distributors'
+            description='Food Vault helps distributors reduce their inventory costs by aggregating orders from multiple kitchens in their local area.'
+          />
+          <MissionStatement 
+            title='Our Mission'
+            missionStatement='Food Vault is a software platform that helps food businesses reduce costs by optimizing their supply chain.'
+          />
+          <FAQ 
+            question='What is Food Vault?'
+            answer='Food Vault is a software platform that helps food businesses reduce costs by optimizing their supply chain.'
+          />
+        </div>
       </div>
       <Footer />
     </main>
