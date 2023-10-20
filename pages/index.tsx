@@ -73,21 +73,11 @@ export default function Home() {
           {/* <div className='flex h-[30px]' /> */}
           {/* TODO: Include this text in the conditional InformationCard.tsx function */}
           <InformationCards />
-          <BenefitsSection 
-            benefits={
-              [
-                'Food Vault is a software platform that helps food businesses reduce costs by optimizing their supply chain.',
-                'We use data aggregation and forecasting to help you reduce your inventory costs.',            
-              ]
-            }
-          />
-          <BenefitsDistributorSection
-            title='For Distributors'
-            description='Food Vault helps distributors reduce their inventory costs by aggregating orders from multiple kitchens in their local area.'
-          />
+          <BenefitsSection />
+          <BenefitsDistributorSection />
           <MissionStatement 
             title='Our Mission'
-            missionStatement='Food Vault is a software platform that helps food businesses reduce costs by optimizing their supply chain.'
+            missionStatement='"Food Vault is a software platform that helps food businesses reduce costs by optimizing their supply chain."'
           />
           <FAQ 
             question='What is Food Vault?'
