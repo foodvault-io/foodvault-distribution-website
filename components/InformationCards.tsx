@@ -106,9 +106,6 @@ export function InformationCards() {
                       to reduce your inventory costs.
                     </p>
                     <br />
-                    <Link href='/about' className='underline underline-offset-4 text-[17px] text-[#D1090FFF]'>
-                      Learn More
-                    </Link>
                   </div>
                 </div>
                 <div className='col-span-2 flex bg-[#FCBABDFF] h-[300px] rounded-3xl'>
@@ -126,9 +123,6 @@ export function InformationCards() {
                       negotiation of a reduced cost inventory order for all kitchens.
                     </p>
                     <br />
-                    <Link href='/about' className='underline underline-offset-4 text-[17px] text-[#D1090FFF]'>
-                      Learn More
-                    </Link>
                   </div>
                   <div className='w-1/2 flex justify-center'>
                     <Image
@@ -155,9 +149,6 @@ export function InformationCards() {
                       inventory data.
                     </p>
                     <br />
-                    <Link href='/about' className='underline underline-offset-4 text-[17px] text-[#D1090FFF]'>
-                      Learn More
-                    </Link>
                   </div>
                   <div className='w-1/2 flex justify-center'>
                     <Image
@@ -183,9 +174,6 @@ export function InformationCards() {
                       by Food Vault to streamline the process.
                     </p>
                     <br />
-                    <Link href='/about' className='underline underline-offset-4 text-[17px] text-[#D1090FFF]'>
-                      Learn More
-                    </Link>
                   </div>
                 </div>
               </div>

@@ -16,12 +16,12 @@ export function AboutUsSection() {
     const [isMobile, setIsMobile] = useState<boolean>(true);
     const handleWindowSizeChange = () => {
         setWidth(window.innerWidth);
-        setIsMobile(window.innerWidth <= 480 ? true : false);
+        setIsMobile(window.innerWidth <= 767 ? true : false);
     };
 
     useEffect(() => {
         setWidth(window.innerWidth);
-        setIsMobile(window.innerWidth <= 480 ? true : false);
+        setIsMobile(window.innerWidth <= 767 ? true : false);
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
@@ -30,7 +30,7 @@ export function AboutUsSection() {
 
     if (isMobile) {
         return (
-            <div className='flex flex-row justify-between items-center w-full h-[170px] mt-4'>
+            <div id='AboutUs' className='flex flex-row justify-between items-center w-full h-[170px] mt-4'>
                 <div className='flex flex-col w-2/3 pl-2'>
                     <div className='flex flex-col justify-between'>
                         <div>
@@ -92,7 +92,7 @@ export function AboutUsSection() {
         )
     } else {
         return (
-            <div className='flex flex-row justify-between w-full h-[200px] mt-4'>
+            <div id='AboutUs' className='flex flex-row justify-between w-full h-[200px] mt-4'>
                 <div className='flex flex-col w-3/5 pl-2 items-center justify-center'>
                     <div className='flex flex-col justify-between'>
                         <div>

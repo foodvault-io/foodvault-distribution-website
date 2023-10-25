@@ -11,12 +11,12 @@ const BenefitsSection = () => {
     const [isMobile, setIsMobile] = useState<boolean>(true);
     const handleWindowSizeChange = () => {
         setWidth(window.innerWidth);
-        setIsMobile(window.innerWidth <= 480 ? true : false);
+        setIsMobile(window.innerWidth <= 767 ? true : false);
     };
 
     useEffect(() => {
         setWidth(window.innerWidth);
-        setIsMobile(window.innerWidth <= 480 ? true : false);
+        setIsMobile(window.innerWidth <= 767 ? true : false);
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
@@ -25,7 +25,7 @@ const BenefitsSection = () => {
 
     if (isMobile) {
         return (
-            <div className='flex flex-col mt-10 pb-10 sm:mt-10 w-full justify-between items-center bg-[#1F3F2E]'>
+            <div id='BenefitsSection' className='flex flex-col mt-10 pb-10 sm:mt-10 w-full justify-between items-center bg-[#1F3F2E]'>
                 <h1 className='text-white text-2xl font-bold pt-10 pb-5'>The Benefits of Food Vault</h1>
                 <Accordion type='single' collapsible className='w-[80%] h-full'>
                     <AccordionItem value='item-1'>
@@ -75,7 +75,7 @@ const BenefitsSection = () => {
         );
     } else {
         return (
-            <div className='bg-green-200 flex flex-row justify-between w-full h-[200px] mt-4'>
+            <div id='BenefitsSection' className='bg-green-200 flex flex-row justify-between w-full h-[200px] mt-4'>
                 <h1>Benefits of FoodVault</h1>
             </div>
         )
